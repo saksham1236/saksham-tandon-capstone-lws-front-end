@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Button, ButtonProps } from "@fluentui/react-components";
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Nabar/Navbar';
+import Home from './pages/Home/Home';
+import axios from 'axios';
 
 function App() {
+
+  const [warnList, setWarnList] = useState([]);
+
   const serverUrl = `http://localhost:8080`
   const labelList = [
     {label: `Home`, link: `/`},
@@ -10,31 +18,31 @@ function App() {
     {label: `About`, link: `/about`}
   ]
 
-  // useEffect(() => {
-  //   async function fetchWarnList(){
-  //     try {
-  //       axios
-  //       .get(serverUrl)
-  //     }
-  //   }
-  // },[])
+  useEffect(() => {
+    async function fetchWarnList() {
+      try {
+        const response = await axios.get(`${serverUrl}/list`);
+        setWarnList(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    fetchWarnList();
+  
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <header>
+          <Navbar labelList={labelList} />
+        </header>
+
+        <Routes>
+          <Route path = "/" element = {<Home warnList = {warnList}/>}/>
+          <Route path = "/about" />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

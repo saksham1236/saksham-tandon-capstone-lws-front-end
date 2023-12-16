@@ -1,5 +1,4 @@
 nav, .nav {
-    padding: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8,6 +7,7 @@ nav, .nav {
      &__logo {
         display: inherit;
         column-gap: 0.5rem;
+        align-items: center;
      }
 
      &__title {
