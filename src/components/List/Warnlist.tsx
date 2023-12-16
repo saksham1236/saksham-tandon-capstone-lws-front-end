@@ -61,7 +61,7 @@ export const Warnlist = (props: any) => {
 								<TableRow key={el.id}>
 									<TableCell>
 										<TableCellLayout>
-											{`${new Date(el.datePosted)}`}
+											{`${new Date(el.datePosted).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric"})}`}
 										</TableCellLayout>
 									</TableCell>
 									<TableCell>

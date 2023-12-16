@@ -5,7 +5,6 @@ import { Button, ButtonProps } from "@fluentui/react-components";
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Nabar/Navbar';
 import Home from './pages/Home/Home';
-import axios from 'axios';
 
 function App() {
 

@@ -16,10 +16,9 @@ import {
 } from "@fluentui/react-components";
 
 function Home(props: any) {
-	const { warnlist } = props;
 	return (
 		<>
-			<section>
+			{/* <section>
 				<div className='home'></div>
 				<h1>Layoff Detector System</h1>
 				<Card>
@@ -34,9 +33,9 @@ function Home(props: any) {
 						}
 					/>
 				</Card>
-			</section>
+			</section> */}
 			<section>
-				<Warnlist warnlist={warnlist} />
+				<Warnlist />
 			</section>
 		</>
 	);
