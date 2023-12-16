@@ -3,8 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-<<<<<<< Updated upstream
-=======
   const serverUrl = `http://localhost:8080`
   const labelList = [
     {label: `Home`, link: `/`},
