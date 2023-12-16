@@ -1,42 +1,25 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import logo from './logo.svg';
-import './App.scss';
-import { Button, ButtonProps } from "@fluentui/react-components";
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Nabar/Navbar';
-import Home from './pages/Home/Home';
-import axios from 'axios';
+import './App.css';
 
 function App() {
-  const serverUrl = `http://localhost:8080`
-  const labelList = [
-    {label: `Home`, link: `/`},
-    {label: `WARN List`, link: `/list`},
-    {label: `About`, link: `/about`}
-  ]
-
-  useEffect(() => {
-    async function fetchWarnList(){
-      try {
-        axios
-        .get()
-      }
-    }
-  },[])
   return (
-    <BrowserRouter>
-      <div className="App">
-        <header>
-          <Navbar labelList={labelList} />
-        </header>
-
-        <Routes>
-          <Route path = "/" element = {<Home />}/>
-          <Route path = "/list" />
-          <Route path = "/about" />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 

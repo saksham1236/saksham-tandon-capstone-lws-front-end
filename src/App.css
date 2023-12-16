@@ -1,7 +1,3 @@
-@use './styles/partials/reset' as*;
-@use './styles/partials/abstracts' as*;
-@use './styles/partials/_global' as*;
-
 .App {
   text-align: center;
 }
