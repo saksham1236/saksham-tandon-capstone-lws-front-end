@@ -1,0 +1,14 @@
+//Mixins
+
+@mixin desktop {
+    @media (width >= 1280px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (width >= 768px) {
+      @content;
+    }
+  }
+  
