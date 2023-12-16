@@ -1,0 +1,31 @@
+@use './abstracts' as*;
+
+section, .container{
+  padding: 1.5rem 1rem;
+  
+  @include tablet{
+    padding: 3rem 2.25rem;
+  }
+
+  @include desktop{
+    padding: 3rem calc((100% - 1020px)/2);
+  }
+}
+
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.med {
+  @include tablet{
+    padding: 3rem calc((100% - 846px)/2);
+  }
+}
+
+.small{
+  @include tablet{
+    padding: 3rem calc((100% - 672px)/2);
+  }
+}
