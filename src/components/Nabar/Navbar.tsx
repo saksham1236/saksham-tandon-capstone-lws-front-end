@@ -22,9 +22,9 @@ function Navbar(props: props) {
 					</div>
 				</div>
 				<div className='nav__link'>
-					{labelList.map((el: any) => {
+					{labelList.map((el: any, i) => {
 						return (
-							<LinkRs to={el.link} className="nav__link__list">
+							<LinkRs key = {i} to={el.link} className="nav__link__list">
 								<Link appearance='subtle'>{el.label}</Link>
 							</LinkRs>
 						);
