@@ -20,10 +20,6 @@ function App() {
   //     }
   //   }
   // },[])
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   return (
     <div className="App">
       <header className="App-header">
