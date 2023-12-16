@@ -3,6 +3,24 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+<<<<<<< Updated upstream
+=======
+  const serverUrl = `http://localhost:8080`
+  const labelList = [
+    {label: `Home`, link: `/`},
+    {label: `WARN List`, link: `/list`},
+    {label: `About`, link: `/about`}
+  ]
+
+  // useEffect(() => {
+  //   async function fetchWarnList(){
+  //     try {
+  //       axios
+  //       .get(serverUrl)
+  //     }
+  //   }
+  // },[])
+>>>>>>> Stashed changes
   return (
     <div className="App">
       <header className="App-header">
