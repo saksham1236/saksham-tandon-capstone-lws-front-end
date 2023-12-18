@@ -37,7 +37,6 @@ export const Watchlist = (props: any) => {
 
 	const searchFormHandler = (e: any) => {
 		e.preventDefault();
-		alert(e.target.addTag.value);
 		const queryString: string = e.target.addTag.value;
 		axios
 		.get(`${serverUrl}/search/${queryString}`)
