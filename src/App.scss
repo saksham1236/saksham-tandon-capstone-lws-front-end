@@ -1,6 +1,4 @@
-@use './styles/partials/reset' as*;
-@use './styles/partials/abstracts' as*;
-@use './styles/partials/_global' as*;
+@use './styles/partials/grids';
 
 .App {
   text-align: center;

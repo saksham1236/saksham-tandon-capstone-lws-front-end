@@ -1,0 +1,24 @@
+nav, .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+     &__logo {
+        display: inherit;
+        column-gap: 0.5rem;
+        align-items: center;
+     }
+
+     &__title {
+        display: inherit;
+        align-content: center;
+     }
+
+    &__link {
+        display: flex;
+        &__list {
+            padding: 0 1rem;
+        }
+    }
+}

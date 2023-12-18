@@ -1,28 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import { Button, ButtonProps } from "@fluentui/react-components";
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Nabar/Navbar';
 import Home from './pages/Home/Home';
-import axios from 'axios';
+import { Watchlist } from './components/WatchList/Watchlist';
 
 function App() {
+
   const serverUrl = `http://localhost:8080`
   const labelList = [
     {label: `Home`, link: `/`},
-    {label: `WARN List`, link: `/list`},
-    {label: `About`, link: `/about`}
+    {label: `Search a Company`, link: `/search`}
   ]
 
-  useEffect(() => {
-    async function fetchWarnList(){
-      try {
-        axios
-        .get()
-      }
-    }
-  },[])
   return (
     <BrowserRouter>
       <div className="App">
@@ -32,8 +24,7 @@ function App() {
 
         <Routes>
           <Route path = "/" element = {<Home />}/>
-          <Route path = "/list" />
-          <Route path = "/about" />
+          <Route path = "/search" element = {<Watchlist />} />
         </Routes>
       </div>
     </BrowserRouter>
