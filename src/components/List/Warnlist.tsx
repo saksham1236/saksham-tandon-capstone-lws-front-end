@@ -49,7 +49,11 @@ export const Warnlist = (props: any) => {
 
 
 	if (!warnList || warnList.length === 0) {
-		return <SkeletonEl />;
+		return (
+			<section>
+				<SkeletonEl />
+			</section>
+		);
 	} else {
 		return (
 			<>
@@ -71,7 +75,7 @@ export const Warnlist = (props: any) => {
 							))}
 						</TableRow>
 					</TableHeader>
-					<TableBody>
+					<TableBody className="warnTable">
 						{warnList.map((el: any, i: number) => {
 							return (
 								<TableRow key={el.id}>
