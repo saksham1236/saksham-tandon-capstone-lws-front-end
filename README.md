@@ -13,9 +13,10 @@
 <p align="center"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&amp;logo=react&amp;logoColor=61DAFB" alt="shields"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&amp;logo=node.js&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" alt="shields"><img src="https://img.shields.io/badge/Supabase-181818?style=for-the-badge&amp;logo=supabase&amp;logoColor=white" alt="shields"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&amp;logo=typescript&amp;logoColor=white" alt="shields"></p>
 
 <h2>Project Screenshots:</h2>
-
+<h3>Main Page</h3>
 <img src="https://raw.githubusercontent.com/saksham1236/saksham-tandon-capstone-lws-front-end/master/demo/LWS-main.png" alt="project-screenshot" width="100%">
 
+<h3>Search Page</h3>
 <img src="https://raw.githubusercontent.com/saksham1236/saksham-tandon-capstone-lws-front-end/master/demo/LWS-search.png" alt="project-screenshot" width="100%">
 
   
