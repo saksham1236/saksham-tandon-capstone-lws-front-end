@@ -26,6 +26,7 @@ Here're some of the project's best features:
 
 *   Scrapes the target websites for layoff notices and log them into a database hosted on supabase
 *   Can search through the master table using the company name
+*   Built using Microsoft's Fluent UI2 React Components. <a href = "https://github.com/microsoft/fluentui">https://github.com/microsoft/fluentui</a>
 
 <h2>🛠️ Installation Steps:</h2>
 
