@@ -5,7 +5,7 @@
 <p id="description">This application developed as part of my capstone project for the Software Engineering Diploma at BrainStation is meticulously crafted using TypeScript Node.js React Express and the Fluent UI React library. The application which currently scrapes layoff notices from Tennesse.gov is designed with adaptability in mind with plans to extend its capabilities to include additional websites in the future.
 </p>
 
-<h2>Inital Idea Proposal</h2>
+<h2>Initial Idea Proposal</h2>
 <p> Every time a company has to lay off employees, they have to issue a WARN notice announcing cuts at least 60 days before the layoff occurs. These notices are available publicly accessible government websites. I am building a web scrapper to log those notices in a database. Which will be available to access on a react based frontend and potentially also have email subscription service.</p>
 
 <p>After hearing about coworkers and experiencing first hand stories about layoffs, that too coming unannounced and affecting about 100,000 people this year alone. I have been thinking how can people know about upcoming layoffs. </p>
@@ -14,9 +14,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://raw.githubusercontent.com/saksham1236/saksham-tandon-capstone-lws-front-end/master/demo/LWS-main.png" alt="project-screenshot" width="100%" height="400/">
+<img src="https://raw.githubusercontent.com/saksham1236/saksham-tandon-capstone-lws-front-end/master/demo/LWS-main.png" alt="project-screenshot" width="100%">
 
-<img src="https://raw.githubusercontent.com/saksham1236/saksham-tandon-capstone-lws-front-end/master/demo/LWS-search.png" alt="project-screenshot" width="100%" height="400/">
+<img src="https://raw.githubusercontent.com/saksham1236/saksham-tandon-capstone-lws-front-end/master/demo/LWS-search.png" alt="project-screenshot" width="100%">
 
   
   
