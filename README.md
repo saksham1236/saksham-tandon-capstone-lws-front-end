@@ -67,3 +67,7 @@ Technologies used in the project:
 *   Express
 *   Supabase
 *   Typescript
+
+<h2>Link to Backend</h2>
+
+<a href = "https://github.com/saksham1236/saksham-tandon-capstone-lws-server">https://github.com/saksham1236/saksham-tandon-capstone-lws-server</a>
